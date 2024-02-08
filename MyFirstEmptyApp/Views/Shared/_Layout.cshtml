@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <title>Cat Lovers Club!</title>
+    <link rel="icon" href="/img/catfav.png" type="image/x-icon">
+    <link href="/CSS/StyleSheet.css" rel="stylesheet" />
+    <link href="/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <style>
+        /* Add your custom styles here */
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+
+        .jumbotron {
+            background-image: url('/img/cats.jpeg');
+            background-size: cover;
+            color: #fff;
+            padding: 100px 25px;
+            margin-bottom: 0;
+        }
+
+        .container {
+            margin-top: 30px;
+        }
+
+        .card {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Cat Lovers Club</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="@Url.Action("Index", "Home")" <span class="sr-only">Home</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("CatCalculator", "Home")">Cat Calculator</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="jumbotron text-center">
+        <h1>Welcome to Cat Lovers Club</h1>
+        <p>We love cats!</p>
+    </div>
+      <div>
+        @RenderBody()
+    </div>
+    <footer >
+        <div class="container text-center">
+            <span class="text-muted">© 2024 Cat Lovers Club. All rights reserved.</span>
+            <br />
+            <span class="text-muted">Made by Neil Borchardt. Cat Lover Supreme.</span>
+        </div>
+    </footer>
+    <script src="/lib/jquery/jquery.min.js"></script>
+    <script src="/js/site.js"></script>
+    <script src="/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,32 @@
+﻿body {
+    
+}
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #343a40; /* Dark background color */
+    color: #fff; /* White text color */
+    text-align: center;
+    padding: 10px 0; /* Adjust padding as needed */
+}
+
+/* Custom CSS */
+.catcontainer {
+    display: flex;
+    align-items: center;
+}
+
+    .catcontainer img {
+        max-width: 400px; /* Limit image width to 400px */
+        height: auto; /* Maintain aspect ratio */
+        margin-right: 20px; /* Adjust spacing between image and text */
+    }
+
+    .catcontainer p {
+        margin: 0; /* Remove default margin */
+    }
